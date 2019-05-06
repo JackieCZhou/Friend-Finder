@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
 	<title>Find A Friend</title>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="stylehome2.css">
@@ -59,10 +63,10 @@
 					</div>
 
 
-					<div class="input-field col s12" style="padding-left: 40px; padding-right: 40px">
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
 						<h4>You enjoy social events with lots of people</h4>
 						<select id="question1">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -74,7 +78,7 @@
 					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
 						<h4>Trying a new restuaurant on a whim is exciting</h4>
 						<select id="question2">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -86,7 +90,7 @@
 					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
 						<h4>When you plan a trip you plan down to the last detail</h4>
 						<select id="question3">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -98,7 +102,7 @@
 					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
 						<h4>Traveling for a vacation is stressful</h4>
 						<select id="question4">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -110,7 +114,7 @@
 					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
 						<h4>Making a good first impresssion is important to you</h4>
 						<select id="question5">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -123,7 +127,7 @@
 						<h4>It would be a challenge for you to spend the whole weekend all by yourself without
 							feeling bored.</h4>
 						<select id="question6">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -135,7 +139,7 @@
 					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
 						<h4>You're the first one to pick up the karaoke mike at the party.</h4>
 						<select id="question7">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -148,7 +152,7 @@
 						<h4>If you make a mistake, you tend to start doubting yourself, your abilities, or your
 							knowledge.</h4>
 						<select id="question8">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -160,7 +164,7 @@
 					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
 						<h4>Living in bustling city atmosphere sounds exciting</h4>
 						<select id="question9">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -172,7 +176,7 @@
 					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
 						<h4>Dogs rule cats drool</h4>
 						<select id="question10">
-							<option value="" disabled selected>Choose your option</option>
+							<option value="" disabled selected>Select Value</option>
 							<option value="1">1 (Strongly Disagree)</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -185,7 +189,8 @@
 		</div>
 		</div>
 		<div>
-			<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton" style = "margin-left: 42%; padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 50px">Find
+			<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton"
+				style="margin-left: 42%; padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 50px">Find
 				a Friend!
 				<i class="fas fa-user-friends"></i>
 			</button>
@@ -199,19 +204,19 @@
 			<div class="row">
 				<div class="col l6">
 					<h5 class="white-text">Friend Finder App</h5>
-					<p class="grey-text text-lighten-4">Thank you for taking the survey!</p>
+					<p class="white-text">Thank you for taking the survey!</p>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="footer">
-				<a class="grey-text text-lighten-4 right" href="https://github.com/JackieCZhou"
+				<a class="white-text right" href="https://github.com/JackieCZhou"
 					style="padding-left: 45px">Reference Work</a>
 			</div>
 		</div>
 	</footer>
 
-	<!-- Modal Dialog Displaying Closest Friend Match -->
+
 	<div id="modal1" class="modal">
 		<div class="modal-content">
 			<h4>Meet Your New Best Friend!!</h4>
@@ -270,11 +275,8 @@
 			// Add user inputs to friends list
 			$.post('/api/friends', userInput)
 				.done(function (data) {
-					// console.log('response = ' + JSON.stringify(data));
-					// Set the name and image values of friend match
 					$('#userMatch').html(data.name);
 					$("#userMatchImage").attr("src", data.photo);
-					// Pop open the modal dialog
 					$('#modal1').modal('open');
 					console.log(data);
 				});

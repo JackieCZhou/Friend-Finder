@@ -12,6 +12,4 @@ function htmlRoutes(app){
 }
 
 module.exports = htmlRoutes;
-console.log("Connected");
-
-
+// console.log("Connected");

@@ -24,7 +24,6 @@ module.exports = function (app) {
             for (var j = 0; j < dataFriends[i].scores.length; j++) {
                 console.log("Friends score" + dataFriends[i].scores[j])
                 console.log("User Score" + newFriend.scores[j])
-
                 totalDifference += Math.abs(parseInt(newFriend.scores[j]) - dataFriends[i].scores[j])
 
             }
@@ -37,7 +36,7 @@ module.exports = function (app) {
         }
         // done with math
         console.log(totalScore);
-
+            // comparing user score to totalScore arr. pulling smallest difference, making newBF var 
 
 
 
