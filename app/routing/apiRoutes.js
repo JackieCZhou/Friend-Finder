@@ -11,7 +11,7 @@ module.exports = function (app) {
         console.log(req.body);
 
 
-        // looping over entire character arr. just in scores
+        // looping over entire character arr. in scores
         var newFriend = req.body
         var totalScore = [];
 
@@ -33,45 +33,14 @@ module.exports = function (app) {
 
 
             console.log(totalDifference);
+    
         }
         // done with math
         console.log(totalScore);
+
+            for (var i = 0; i < totalScore.length; i++);
+
             // comparing user score to totalScore arr. pulling smallest difference, making newBF var 
-
-
-
-
-
-        // var scoresArray = [];
-        // for (var i = 0; i < req.body.scores.length; i++) {
-        //     scoresArray.push(parseInt(req.body.scores[i]))
-
-        // }
-
-        // newFriend.scores = scoresArray;
-
-
-
-        // var compareFriends = [];
-        // for (var i = 0; i < dataFriends.length; i++) {
-        //     var currentAdd = 0;
-        //     currentAdd += Math.abs(newFriend.scores[i] - dataFriends[i].scores[i]);
-
-        // }
-
-        // compareFriends.push(currentAdd);
-
-
-        // var newBestFriend = 0;
-        // for (var i = 1; i < compareFriends.length; i++) {
-
-        //     if (compareFriends[i] <= compareFriends[newBestFriend]) {
-        //         bestFriendMatch = i;
-        //     }
-        // }
-
-        // var bestFriendMatch = dataFriends[bestFriendMatch];
-
 
         // dataFriends.push(newBestFriend);
         // console.log(bestFriendMatch);
