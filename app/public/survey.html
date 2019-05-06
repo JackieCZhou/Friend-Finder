@@ -1,1 +1,285 @@
-survey.html
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Find A Friend</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="stylehome2.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+	<link rel="stylesheet" href="stylehome.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper #EC7063">
+				<ul class="right hide-on-med-and-down" id="head-nav-links"></ul>
+				<li><a href="/home.html">Home</a></li>
+				<li><a href="/api/friends">Check Out The Candidates!</a></li>
+				</ul>
+				<h2 style="padding-left: 20px; padding-top: 20px">Friend Finder</h2>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="survey-container">
+			<div class="row">
+				<div class="col s12 z-depth-5 mainpanel" style="padding-left: 20px; padding-right: 20px">
+					<div>
+						<br>
+						<strong>
+							<h3 style="color: #26A69A; text-align: center">Answer the questions below to find a new
+								friend today!</h3>
+						</strong>
+						<br>
+					</div>
+					<br>
+					<div class="divider"></div>
+					<br>
+
+					<div class="input-field col s6">
+						<h4>Name (Required)</h4>
+						<i class="fas fa-user-alt"></i>
+						<input type="text" class="validate" placeholder="Your Name Here" id="userName">
+					</div>
+
+					<div class="input-field col s6">
+						<h4>Link to Photo Image (Optional)</h4>
+						<i class="fas fa-portrait fa-lg"></i>
+						<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+					</div>
+
+
+					<div class="input-field col s12" style="padding-left: 40px; padding-right: 40px">
+						<h4>You enjoy social events with lots of people</h4>
+						<select id="question1">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>Trying a new restuaurant on a whim is exciting</h4>
+						<select id="question2">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>When you plan a trip you plan down to the last detail</h4>
+						<select id="question3">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>Traveling for a vacation is stressful</h4>
+						<select id="question4">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>Making a good first impresssion is important to you</h4>
+						<select id="question5">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>It would be a challenge for you to spend the whole weekend all by yourself without
+							feeling bored.</h4>
+						<select id="question6">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>You're the first one to pick up the karaoke mike at the party.</h4>
+						<select id="question7">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>If you make a mistake, you tend to start doubting yourself, your abilities, or your
+							knowledge.</h4>
+						<select id="question8">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>Living in bustling city atmosphere sounds exciting</h4>
+						<select id="question9">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12" style="padding-left: 100px; padding-right: 100px">
+						<h4>Dogs rule cats drool</h4>
+						<select id="question10">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div>
+			<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton" style = "margin-left: 42%; padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 50px">Find
+				a Friend!
+				<i class="fas fa-user-friends"></i>
+			</button>
+		</div>
+		<br>
+		<br>
+	</main>
+
+	<footer class="page-footer #EC7063">
+		<div class="footer">
+			<div class="row">
+				<div class="col l6">
+					<h5 class="white-text">Friend Finder App</h5>
+					<p class="grey-text text-lighten-4">Thank you for taking the survey!</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="footer">
+				<a class="grey-text text-lighten-4 right" href="https://github.com/JackieCZhou"
+					style="padding-left: 45px">Reference Work</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal Dialog Displaying Closest Friend Match -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Meet Your New Best Friend!!</h4>
+			<div class="divider"></div>
+			<h5 id="userMatch"></h5>
+			<img id="userMatchImage" class="materialboxed" width="650" src="">
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Find Another
+				Friend!</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('select').material_select();
+			$('.modal').modal({
+				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				inDuration: 300, // Transition in duration
+				outDuration: 200, // Transition out duration
+				startingTop: '4%', // Starting top style attribute
+				endingTop: '10%' // Ending top style attribute
+			});
+		});
+		// Activate submit button
+		$('#submitButton').on('click', function (event) {
+			event.preventDefault();
+			// Gather user inputs
+			// var userInput = {
+			// 	name: $('#userName').val().trim(),
+			// 	photo: $('#userPhoto').val().trim(),
+			// 	scores:[
+			// 		$('#question1').val().trim(),
+			// 		$('#question2').val().trim(),
+			// 		$('#question3').val().trim(),
+			// 		$('#question4').val().trim(),
+			// 		$('#question5').val().trim(),
+			// 		$('#question6').val().trim(),
+			// 		$('#question7').val().trim(),
+			// 		$('#question8').val().trim(),
+			// 		$('#question9').val().trim(),
+			// 		$('#question10').val().trim()
+			// 	]
+			// };
+			// Gather user inputs
+			var userInput = {
+				name: $('#userName').val(),
+				photo: $('#userPhoto').val().trim(),
+				scores: [
+					1, 2, 3, 2, 4, 1, 3, 4, 5, 1,
+				]
+			};
+
+			console.log('userInput = ' + JSON.stringify(userInput));
+			// Add user inputs to friends list
+			$.post('/api/friends', userInput)
+				.done(function (data) {
+					// console.log('response = ' + JSON.stringify(data));
+					// Set the name and image values of friend match
+					$('#userMatch').html(data.name);
+					$("#userMatchImage").attr("src", data.photo);
+					// Pop open the modal dialog
+					$('#modal1').modal('open');
+					console.log(data);
+				});
+		});
+	</script>
+</body>
+
+</html>
