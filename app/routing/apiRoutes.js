@@ -39,7 +39,9 @@ module.exports = function (app) {
         console.log(totalScore);
 
             for (var i = 0; i < totalScore.length; i++);
-
+                // if totalDifference is - or = data.friends[i], make newBestFriend
+                // else, dataFriends++
+                
             // comparing user score to totalScore arr. pulling smallest difference, making newBF var 
 
         // dataFriends.push(newBestFriend);
