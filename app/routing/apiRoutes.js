@@ -14,6 +14,7 @@ module.exports = function (app) {
         // looping over entire character arr. in scores
         var newFriend = req.body
         var totalScore = [];
+        var minDifference = 40;
 
         for (var i = 0; i < dataFriends.length; i++) {
             console.log("Current Friend " + dataFriends[i].name);
@@ -38,6 +39,10 @@ module.exports = function (app) {
         // done with math
         console.log(totalScore);
 
+                // if total score array is smaller than minimum, replace min, 
+
+                // totalScore, compare to minDifference, if less than min difference,  minDifference becomes 
+
             for (var i = 0; i < totalScore.length; i++);
                 // if totalDifference is - or = data.friends[i], make newBestFriend
                 // else, dataFriends++
@@ -49,7 +54,7 @@ module.exports = function (app) {
         // console.log(newBestFriend);
         // console.log(dataFriends[0]);
 
-        res.json(dataFriends[0]);
+        res.json(dataFriends[i]);
 
     })
 
