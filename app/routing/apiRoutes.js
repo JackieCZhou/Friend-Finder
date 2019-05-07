@@ -1,6 +1,9 @@
 var path = require("path");
 
 var dataFriends = require("../data/friends.js");
+var matchName = null;
+var matchImage = null;
+
 
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
@@ -30,33 +33,29 @@ module.exports = function (app) {
             }
 
             totalScore.push(totalDifference)
-            
-
-
             console.log(totalDifference);
-    
+
         }
-        // done with math
         console.log(totalScore);
 
-                // if total score array is smaller than minimum, replace min, 
 
-                // totalScore, compare to minDifference, if less than min difference,  minDifference becomes 
+        for (var i = 0; i < totalScore.length; i++) {
+            if (totalScore[i] < minDifference) {
+                minDifference = totalDifference;
+                matchName = dataFriends[i].name;
+                matchImage = dataFriends[i].photo;
+                console.log('********\n', matchName, matchImage, '\n********')
+            }
+        }
 
-            for (var i = 0; i < totalScore.length; i++);
-                // if totalDifference is - or = data.friends[i], make newBestFriend
-                // else, dataFriends++
-                
-            // comparing user score to totalScore arr. pulling smallest difference, making newBF var 
+        // Add new user
+        dataFriends.push(newFriend);
 
-        // dataFriends.push(newBestFriend);
-        // console.log(bestFriendMatch);
-        // console.log(newBestFriend);
-        // console.log(dataFriends[0]);
-
-        res.json(dataFriends[i]);
+        // response
+        console.log(matchName, matchImage)
+        // console.log(totalScore)
+        res.json({ status: 'OK', matchName: matchName, matchImage: matchImage });
 
     })
 
 };
-
